@@ -1,0 +1,20 @@
+name: Merge workflow
+on:
+  push:
+    branches:
+      - main
+      - dev
+jobs:
+  storybook-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - run: yarn install --frozen-lockfile
+      - run: yarn storybook:build
+      - name: Deploy Storybook
+        run: yarn storybook:deploy --ci --existing-output-dir=storybook-static
+        env:
+          GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}

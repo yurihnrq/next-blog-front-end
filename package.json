@@ -11,6 +11,7 @@
     "test:ci": "jest --ci --bail --passWithNoTests --coverage",
     "storybook": "storybook dev -p 6006",
     "storybook:build": "storybook build",
+    "storybook:deploy": "storybook-to-ghpages",
     "husky:prepare": "husky install",
     "husky:add": "husky add .husky/pre-commit"
   },
@@ -37,6 +38,7 @@
     "@storybook/blocks": "^7.0.0-rc.8",
     "@storybook/nextjs": "^7.0.0-rc.8",
     "@storybook/react": "^7.0.0-rc.8",
+    "@storybook/storybook-deployer": "^2.8.16",
     "@storybook/testing-library": "^0.0.14-next.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",

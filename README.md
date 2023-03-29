@@ -37,12 +37,6 @@ To start Storybook local server, run:
 yarn storybook
 ```
 
-The build command will create a static version of Storybook in the `storybook-static` folder:
-
-```bash
-yarn storybook:build
-```
-
 ### ✅ Testing
 
 To run tests with Jest, run:
