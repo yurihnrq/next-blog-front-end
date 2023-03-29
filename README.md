@@ -50,8 +50,8 @@ To run tests with Jest, run:
 ```bash
 yarn test
 
-# or, to run tests in watch mode
-yarn test:watch
+# Additionally, is possible to pass desired options
+yarn test --watch --coverage
 ```
 
 ## 📝 License
