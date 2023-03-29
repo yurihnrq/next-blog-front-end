@@ -9,7 +9,9 @@
     "lint": "next lint",
     "test": "jest",
     "storybook": "storybook dev -p 6006",
-    "storybook:build": "storybook build"
+    "storybook:build": "storybook build",
+    "husky:prepare": "husky install",
+    "husky:add": "husky add .husky/pre-commit"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.16",
@@ -43,6 +45,7 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-storybook": "^0.6.11",
+    "husky": "^8.0.3",
     "jest": "^29.5.0",
     "jest-environment-jsdom": "^29.5.0",
     "postcss": "^8.4.21",
