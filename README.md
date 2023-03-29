@@ -37,6 +37,8 @@ To start Storybook local server, run:
 yarn storybook
 ```
 
+The deployed Storybook can be accessed [here](https://yurihnrq.github.io/next-blog-front-end/).
+
 ### ✅ Testing
 
 To run tests with Jest, run:
