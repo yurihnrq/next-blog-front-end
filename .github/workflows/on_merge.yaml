@@ -19,8 +19,9 @@ jobs:
         run: yarn storybook:build
 
       - name: Deploy Storybook
-        run: yarn storybook:deploy \
-          --ci --existing-output-dir=storybook-static \
-          --source-branch=main --target-branch=docs
+        run: |
+          yarn storybook:deploy \
+            --ci --existing-output-dir=storybook-static \
+            --source-branch=main --target-branch=docs
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
