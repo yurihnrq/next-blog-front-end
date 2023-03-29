@@ -50,6 +50,21 @@ yarn test
 yarn test --watch --coverage
 ```
 
+## 🚀 Deployment
+
+This project is automatically deployed on [Vercel](https://vercel.com/) whenever a new commit is pushed to the `main` branch. A preview is also deployed for pushes to the `dev` branch.
+
+- Production URL: <https://prod-next-blog.vercel.app/>
+- Development Preview URL: <https://next-blog-front-end-git-dev-yurihnrq.vercel.app/>
+
+To prevent preview deploys for others branches, [Ignore Build Setup](https://vercel.com/guides/how-do-i-use-the-ignored-build-step-field-on-vercel) was configured to use the [`ignore_build.sh`](./scripts/ignore_build.sh) script with the following command:
+
+```bash
+if [ -e ./scripts/ignore_build.sh ]; then ./scripts/ignore_build.sh; else exit 0; fi
+```
+
+This condition was necessary as the storybook `/docs` branch does not contain a `ignore_build.sh` file.
+
 ## 📝 License
 
 This project is licensed under the MIT License - see the [`LICENSE`](LICENSE) file for details.
