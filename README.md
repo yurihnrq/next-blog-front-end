@@ -11,6 +11,8 @@ Technologies used:
 - ESLint and Prettier
 - Husky and lint-staged
 
+The planned Design System and UI can be found at this [Figma project](https://www.figma.com/file/3eX16xzNSjvRmJUTu9nUQW/Website-Design?t=3iO7HjUjUVJ3N9Os-1).
+
 ## 🤩 Getting Started
 
 This project uses `yarn` as its package manager.
