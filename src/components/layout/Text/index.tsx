@@ -1,5 +1,5 @@
 import { Slot } from '@radix-ui/react-slot';
-import clsx from 'clsx';
+import { clsx } from 'clsx';
 import { HTMLAttributes } from 'react';
 
 export interface TextProps extends HTMLAttributes<HTMLElement> {

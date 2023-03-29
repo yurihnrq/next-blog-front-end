@@ -1,5 +1,4 @@
-import clsx from 'clsx';
-
+import { clsx } from 'clsx';
 import { ElementType, HTMLAttributes } from 'react';
 
 export interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {

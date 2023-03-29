@@ -1,4 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
+
 import RootLayout, { RootLayoutProps } from './layout';
 import Home from './page';
 

@@ -2,12 +2,47 @@
   "extends": [
     "next/core-web-vitals",
     "plugin:storybook/recommended",
+    "plugin:import/recommended",
     "prettier"
   ],
   "plugins": [
     "prettier"
   ],
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "type",
+          "builtin",
+          "object",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "newlines-between": "always"
+      }
+    ],
+    "@next/next/no-html-link-for-pages": [
+      "error",
+      "./src/app"
+    ]
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [
+        ".ts",
+        ".tsx"
+      ]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      },
+      "node": true
+    }
   }
 }

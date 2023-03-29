@@ -1,5 +1,6 @@
 import { NewspaperIcon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
+
 import { Heading } from '../Heading';
 
 export function Header() {

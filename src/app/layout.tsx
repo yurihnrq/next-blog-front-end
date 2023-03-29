@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
-import { Header } from '@src/components/layout/Header';
 import { Roboto } from 'next/font/google';
+
+import { Header } from '@src/components/layout/Header';
 
 import './globals.css';
 
