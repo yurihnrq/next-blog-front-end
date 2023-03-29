@@ -18,11 +18,15 @@ export function Text({
 
   return (
     <Comp
-      className={clsx(className, {
-        'text-sm': size === 'small',
-        'text-base': size === 'medium',
-        'text-lg': size === 'large'
-      })}
+      className={clsx(
+        className,
+        {
+          'text-sm': size === 'small' || !size,
+          'text-base': size === 'medium',
+          'text-lg': size === 'large'
+        },
+        'dark:text-slate-100'
+      )}
       {...rest}
     >
       {children}

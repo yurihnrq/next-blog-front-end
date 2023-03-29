@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text should render as child 1`] = `
+<div>
+  <span
+    class="text-sm dark:text-slate-100"
+    data-testid="child"
+  >
+    Hello World!
+  </span>
+</div>
+`;
+
+exports[`Text should render correctly 1`] = `
+<div>
+  <p
+    class="text-sm dark:text-slate-100"
+  >
+    Hello World!
+  </p>
+</div>
+`;
+
+exports[`Text should render with large size 1`] = `
+<div>
+  <p
+    class="text-lg dark:text-slate-100"
+  >
+    Hello World!
+  </p>
+</div>
+`;
+
+exports[`Text should render with medium size 1`] = `
+<div>
+  <p
+    class="text-base dark:text-slate-100"
+  >
+    Hello World!
+  </p>
+</div>
+`;
+
+exports[`Text should render with small size 1`] = `
+<div>
+  <p
+    class="text-sm dark:text-slate-100"
+  >
+    Hello World!
+  </p>
+</div>
+`;
