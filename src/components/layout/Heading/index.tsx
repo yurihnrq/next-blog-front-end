@@ -28,11 +28,16 @@ export function Heading({
 
   return (
     <Comp
-      className={clsx(className, 'font-bold', {
-        'text-xl': size === 'small',
-        'text-2xl': size === 'medium',
-        'text-3xl': size === 'large'
-      })}
+      className={clsx(
+        className,
+        'font-bold',
+        {
+          'text-xl': size === 'small',
+          'text-2xl': size === 'medium',
+          'text-3xl': size === 'large'
+        },
+        'dark:text-slate-100'
+      )}
       {...rest}
     >
       {children}
